@@ -1,0 +1,196 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://vital.ai/ontology/vital-test#"
+     xml:base="http://vital.ai/ontology/vital-test"
+     xmlns:vital-core="http://vital.ai/ontology/vital-core#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vital="http://vital.ai/ontology/vital#">
+    <owl:Ontology rdf:about="http://vital.ai/ontology/vital-test">
+        <owl:imports rdf:resource="http://vital.ai/ontology/vital"/>
+        <vital-core:hasDefaultPackage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">com.vitalai.domain.test</vital-core:hasDefaultPackage>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.2.304</owl:versionInfo>
+        <vital-core:hasDefaultGroupId>vitalai-com</vital-core:hasDefaultGroupId>
+        <vital-core:hasDefaultArtifactId>vital-test</vital-core:hasDefaultArtifactId>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://vital.ai/ontology/vital-test#hasTestMultiURIPropertyURIs -->
+
+    <owl:ObjectProperty rdf:about="http://vital.ai/ontology/vital-test#hasTestMultiURIPropertyURIs">
+        <rdfs:domain rdf:resource="http://vital.ai/ontology/vital-test#TestNode"/>
+        <rdfs:range rdf:resource="http://vital.ai/ontology/vital-test#TestNode"/>
+        <vital-core:hasMultipleValues rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</vital-core:hasMultipleValues>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vital.ai/ontology/vital-test#hasTestURIPropertyURI -->
+
+    <owl:ObjectProperty rdf:about="http://vital.ai/ontology/vital-test#hasTestURIPropertyURI">
+        <rdfs:domain rdf:resource="http://vital.ai/ontology/vital-test#TestNode"/>
+        <rdfs:range rdf:resource="http://vital.ai/ontology/vital-test#TestNode"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://vital.ai/ontology/vital-test#hasTestDateTimeProperty -->
+
+    <owl:DatatypeProperty rdf:about="http://vital.ai/ontology/vital-test#hasTestDateTimeProperty">
+        <rdfs:domain rdf:resource="http://vital.ai/ontology/vital-test#TestNode"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vital.ai/ontology/vital-test#hasTestDoubleProperty -->
+
+    <owl:DatatypeProperty rdf:about="http://vital.ai/ontology/vital-test#hasTestDoubleProperty">
+        <rdfs:domain rdf:resource="http://vital.ai/ontology/vital-test#TestNode"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vital.ai/ontology/vital-test#hasTestGeolocationProperty -->
+
+    <owl:DatatypeProperty rdf:about="http://vital.ai/ontology/vital-test#hasTestGeolocationProperty">
+        <rdfs:domain rdf:resource="http://vital.ai/ontology/vital-test#TestNode"/>
+        <rdfs:range rdf:resource="http://vital.ai/ontology/vital-core#geoLocation"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vital.ai/ontology/vital-test#hasTestIntegerProperty -->
+
+    <owl:DatatypeProperty rdf:about="http://vital.ai/ontology/vital-test#hasTestIntegerProperty">
+        <rdfs:domain rdf:resource="http://vital.ai/ontology/vital-test#TestNode"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vital.ai/ontology/vital-test#hasTestMultiDateTimeProperty -->
+
+    <owl:DatatypeProperty rdf:about="http://vital.ai/ontology/vital-test#hasTestMultiDateTimeProperty">
+        <rdfs:domain rdf:resource="http://vital.ai/ontology/vital-test#TestNode"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <vital-core:hasMultipleValues rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</vital-core:hasMultipleValues>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vital.ai/ontology/vital-test#hasTestMultiGeoLocationProperty -->
+
+    <owl:DatatypeProperty rdf:about="http://vital.ai/ontology/vital-test#hasTestMultiGeoLocationProperty">
+        <rdfs:domain rdf:resource="http://vital.ai/ontology/vital-test#TestNode"/>
+        <rdfs:range rdf:resource="http://vital.ai/ontology/vital-core#geoLocation"/>
+        <vital-core:hasMultipleValues rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</vital-core:hasMultipleValues>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vital.ai/ontology/vital-test#hasTestMultiIntegerProperty -->
+
+    <owl:DatatypeProperty rdf:about="http://vital.ai/ontology/vital-test#hasTestMultiIntegerProperty">
+        <rdfs:domain rdf:resource="http://vital.ai/ontology/vital-test#TestNode"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <vital-core:hasMultipleValues rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</vital-core:hasMultipleValues>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vital.ai/ontology/vital-test#hasTestMultiStringProperty -->
+
+    <owl:DatatypeProperty rdf:about="http://vital.ai/ontology/vital-test#hasTestMultiStringProperty">
+        <rdfs:domain rdf:resource="http://vital.ai/ontology/vital-test#TestNode"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <vital-core:hasMultipleValues rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</vital-core:hasMultipleValues>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vital.ai/ontology/vital-test#hasTestStringProperty -->
+
+    <owl:DatatypeProperty rdf:about="http://vital.ai/ontology/vital-test#hasTestStringProperty">
+        <rdfs:domain rdf:resource="http://vital.ai/ontology/vital-test#TestNode"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vital.ai/ontology/vital-test#hasTestTruthProperty -->
+
+    <owl:DatatypeProperty rdf:about="http://vital.ai/ontology/vital-test#hasTestTruthProperty">
+        <rdfs:domain rdf:resource="http://vital.ai/ontology/vital-test#TestNode"/>
+        <rdfs:range rdf:resource="http://vital.ai/ontology/vital-core#truth"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vital.ai/ontology/vital-test#isTestBooleanProperty -->
+
+    <owl:DatatypeProperty rdf:about="http://vital.ai/ontology/vital-test#isTestBooleanProperty">
+        <rdfs:domain rdf:resource="http://vital.ai/ontology/vital-test#TestNode"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://vital.ai/ontology/vital-test#Edge_hasTestNode -->
+
+    <owl:Class rdf:about="http://vital.ai/ontology/vital-test#Edge_hasTestNode">
+        <rdfs:subClassOf rdf:resource="http://vital.ai/ontology/vital-core#VITAL_PeerEdge"/>
+        <vital-core:hasEdgeDestDomain rdf:resource="http://vital.ai/ontology/vital-test#TestNode"/>
+        <vital-core:hasEdgeSrcDomain rdf:resource="http://vital.ai/ontology/vital-test#TestNode"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vital.ai/ontology/vital-test#TestNode -->
+
+    <owl:Class rdf:about="http://vital.ai/ontology/vital-test#TestNode">
+        <rdfs:subClassOf rdf:resource="http://vital.ai/ontology/vital-core#VITAL_Node"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
